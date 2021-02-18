@@ -1,6 +1,6 @@
 Collect HAR trace to isolate any issues or unexpected behavior. 
 
-In eneral, the process goes:
+Steps are given for different browsers, usually the process goes:
 1.	Start the capture
 2.	Reproduce the behavior
 3.	End and save the capture
