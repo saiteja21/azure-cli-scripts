@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "48d2ca06-af3e-44b3-abcc-b3d2c31801cd",
+		"name": "BotAuthenticationTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "<AppID>",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "<AppPassword>",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "https://api.botframework.com/.default",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"botframework.com",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
