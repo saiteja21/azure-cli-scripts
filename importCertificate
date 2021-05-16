@@ -1,0 +1,5 @@
+$pswd = "1234"
+$pfxfilepath = "C:\Users\mharriso\Desktop\markharrisonkv-MarkHarrisonCert-20200315.pfx"
+
+Import-PfxCertificate -Exportable -CertStoreLocation Cert:\CurrentUser\My `
+ -FilePath $PfxFilePath -Password (ConvertTo-SecureString -String $pswd -AsPlainText -Force)
